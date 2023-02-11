@@ -1,4 +1,4 @@
-﻿using CalculatorTests.Shared;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +8,12 @@ using Xunit;
 
 namespace CalculatorApp.Unit.Tests
 {
-    [Collection("Calculator Collection")]
-    public class AdditionTests : IClassFixture<CalculatorFixture>
+    [Collection("Calculator Unit Tests Collection")]
+    public class AdditionTests
     {
-        private readonly CalculatorFixture _calculatorFixture;
+        private readonly CalculatorUnittestsFixture _calculatorFixture;
 
-        public AdditionTests(CalculatorFixture calculatorFixture)
+        public AdditionTests(CalculatorUnittestsFixture calculatorFixture)
         {
             _calculatorFixture = calculatorFixture;
         }

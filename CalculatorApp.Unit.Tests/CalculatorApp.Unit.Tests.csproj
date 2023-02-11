@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CalculatorApp\CalculatorApp.csproj" />
-    <ProjectReference Include="..\CalculatorTests.Shared\CalculatorTests.Shared.csproj" />
   </ItemGroup>
 
 </Project>
