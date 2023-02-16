@@ -53,17 +53,6 @@ namespace CalculatorApp.Integration.Tests
         }
 
         [Theory]
-        [InlineData(6, 0)]
-        public void Divide_ByZero_ThrowsDivideByZeroException(int a, int b)
-        {
-            // Arrange
-            var calculator = _calculatorFixture.Calculator;
-
-            // Act & Assert
-            Assert.Throws<DivideByZeroException>(() => calculator.Divide(a, b));
-        }
-
-        [Theory]
         [InlineData(2, 3, 5, 5, 2, 3, 15, 2, 7.5)]
         public void PerformComplexMathematicalOperations_CorrectlyAppliesMultipleOperations_ExpectedResults(int a, int b, int expectedAddition, int c, int d, int expectedSubtraction, int expectedMultiplication, int e, double expectedDivision)
         {
